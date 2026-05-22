@@ -200,10 +200,10 @@ RETORNANDO STATUS
 
 | Nome | RM | Responsabilidade |
 |---|---|---|
-| Natália Cristina | RM564099 | Backend Java + Spring Boot (API REST, Oracle, alertas) |
-| Nickolas Davi | RM564105 | App mobile (check-in, histórico, notificações) |
-| Rodrigo Silva | RM565162 | Backend Java + Spring Boot (API REST, Oracle, alertas) |
-| Samara Vilela | RM566133 | IoT — ESP32 + sensor PIR + integração |
-| Otávio Ferreira | RM565960 | Documentação, diagramas, testes e pitch (Compliance/QA) |
+| Natália Cristina | RM564099 |
+| Nickolas Davi | RM564105 | 
+| Rodrigo Silva | RM565162 | 
+| Samara Vilela | RM566133 | 
+| Otávio Ferreira | RM565960 | 
 
 Turma: **2TDSR** — FIAP — 2026
