@@ -161,6 +161,41 @@ src/main/java/br/com/fiap/solin/
 
 ---
 
+
+---
+
+## 📸 Evidências de Testes
+
+Testes dos endpoints executados via Swagger UI, comprovando o funcionamento completo do CRUD e a persistência dos dados no banco Oracle.
+
+### Documentação Swagger
+![Swagger UI](documentos/prints/swagger.png)
+
+### Aplicação rodando
+![Aplicação rodando](documentos/prints/aplicacao-crud.png)
+
+### CRUD — Operações
+
+**Listar (GET):**
+![GET lista](documentos/prints/crud-get-lista.png)
+
+**Buscar por ID (GET):**
+![GET por id](documentos/prints/get-api-especie-id.png)
+
+**Atualizar (PUT):**
+![PUT atualizar](documentos/prints/put-crud.png)
+
+**Excluir (DELETE):**
+![DELETE](documentos/prints/delete-crud.png)
+
+**Confirmação após exclusão (404 — recurso removido):**
+![GET após delete](documentos/prints/get-no-id-apagado-no-delete.png)
+
+### Tratamento de erros
+A API trata exceções de forma adequada, retornando status HTTP e mensagens claras.
+
+![Erro tratado](documentos/prints/delete-crud-erro.png)
+
 ## 👥 Equipe
 
 | Nome | RM | Responsabilidade |
@@ -171,4 +206,4 @@ src/main/java/br/com/fiap/solin/
 | Samara Vilela | RM566133 | IoT — ESP32 + sensor PIR + integração |
 | Otávio Ferreira | RM565960 | Documentação, diagramas, testes e pitch (Compliance/QA) |
 
-Turma: **2TDSP** — FIAP — 2026
+Turma: **2TDSR** — FIAP — 2026
