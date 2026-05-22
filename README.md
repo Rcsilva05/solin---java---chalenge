@@ -192,7 +192,6 @@ Testes dos endpoints executados via Swagger UI, comprovando o funcionamento comp
 ![GET após delete](documentos/Prints/get-no-id-apagado-no-delete.png)
 
 ### Tratamento de erros
-### Tratamento de erros
 A API trata exceções de forma adequada, retornando status HTTP e mensagens claras.
 
 ![Erro tratado](documentos/Prints/delete-crud-erro.png)
