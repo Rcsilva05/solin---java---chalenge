@@ -169,32 +169,33 @@ src/main/java/br/com/fiap/solin/
 Testes dos endpoints executados via Swagger UI, comprovando o funcionamento completo do CRUD e a persistência dos dados no banco Oracle.
 
 ### Documentação Swagger
-![Swagger UI](documentos/prints/swagger.png)
+![Swagger UI](documentos/Prints/swagger.png)
 
 ### Aplicação rodando
-![Aplicação rodando](documentos/prints/aplicacao-crud.png)
+![Aplicação rodando](documentos/Prints/aplicacao-crud.png)
 
 ### CRUD — Operações
 
 **Listar (GET):**
-![GET lista](documentos/prints/crud-get-lista.png)
+![GET lista](documentos/Prints/crud-get-lista.png)
 
 **Buscar por ID (GET):**
-![GET por id](documentos/prints/get-api-especie-id.png)
+![GET por id](documentos/Prints/get-api-especie-id.png)
 
 **Atualizar (PUT):**
-![PUT atualizar](documentos/prints/put-crud.png)
+![PUT atualizar](documentos/Prints/put-crud.png)
 
 **Excluir (DELETE):**
-![DELETE](documentos/prints/delete-crud.png)
+![DELETE](documentos/Prints/delete-crud.png)
 
 **Confirmação após exclusão (404 — recurso removido):**
-![GET após delete](documentos/prints/get-no-id-apagado-no-delete.png)
+![GET após delete](documentos/Prints/get-no-id-apagado-no-delete.png)
 
+### Tratamento de erros
 ### Tratamento de erros
 A API trata exceções de forma adequada, retornando status HTTP e mensagens claras.
 
-![Erro tratado](documentos/prints/delete-crud-erro.png)
+![Erro tratado](documentos/Prints/delete-crud-erro.png)
 
 ## 👥 Equipe
 
