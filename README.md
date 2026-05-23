@@ -74,11 +74,7 @@ O perfil `dev` é o padrão. Ele já popula o banco com 3 espécies (Cão, Gato 
 
 ### Rodando contra Oracle FIAP
 
-1. Edite `src/main/resources/application-prod.properties`:
-   ```properties
-   spring.datasource.username=SEU_RM
-   spring.datasource.password=SUA_SENHA
-   ```
+1. Defina as variáveis de ambiente `DB_USER` e `DB_PASSWORD` com suas credenciais da FIAP (o `application-prod.properties` já as utiliza, sem expor senha no código).
 2. Suba com o perfil prod:
    ```bash
    mvn spring-boot:run -Dspring-boot.run.profiles=prod
@@ -161,12 +157,9 @@ src/main/java/br/com/fiap/solin/
 
 ---
 
-
----
-
 ## 📸 Evidências de Testes
 
-Testes dos endpoints executados via Swagger UI, comprovando o funcionamento completo do CRUD e a persistência dos dados no banco Oracle.
+Os endpoints foram testados em **duas ferramentas**: Swagger UI e Postman, comprovando o funcionamento completo do CRUD e a persistência dos dados.
 
 ### Documentação Swagger
 ![Swagger UI](documentos/Prints/swagger.png)
@@ -174,37 +167,86 @@ Testes dos endpoints executados via Swagger UI, comprovando o funcionamento comp
 ### Aplicação rodando
 ![Aplicação rodando](documentos/Prints/aplicacao-crud.png)
 
-### CRUD — Operações
+---
 
-**Listar (GET):**
-![GET lista](documentos/Prints/crud-get-lista.png)
+### Listar (GET)
+**Swagger:**
+![Swagger - listar](documentos/Prints/crud-get-lista.png)
 
-**Buscar por ID (GET):**
-![GET por id](documentos/Prints/get-api-especie-id.png)
+**Postman:**
+![Postman - listar espécies](documentos/Prints/postman-especie-lista.png)
 
-**Atualizar (PUT):**
-![PUT atualizar](documentos/Prints/put-crud.png)
+---
 
-**Excluir (DELETE):**
-![DELETE](documentos/Prints/delete-crud.png)
+### Buscar por ID (GET)
+**Swagger:**
+![Swagger - buscar por id](documentos/Prints/get-api-especie-id.png)
+
+**Postman:**
+![Postman - buscar alerta por id](documentos/Prints/postman-alerta-id.png)
+
+---
+
+### Cadastrar (POST)
+**Postman - Espécie:**
+![Postman - cadastrar espécie](documentos/Prints/postman-especie-post.png)
+
+**Postman - Tutor:**
+![Postman - cadastrar tutor](documentos/Prints/postman-tutor-post.png)
+
+**Postman - Pet:**
+![Postman - cadastrar pet](documentos/Prints/postman-pet-post.png)
+
+**Postman - Evento:**
+![Postman - cadastrar evento](documentos/Prints/postman-evento-post.png)
+
+---
+
+### Atualizar (PUT)
+**Swagger:**
+![Swagger - atualizar](documentos/Prints/put-crud.png)
+
+---
+
+### Excluir (DELETE)
+**Swagger:**
+![Swagger - excluir](documentos/Prints/delete-crud.png)
 
 **Confirmação após exclusão (404 — recurso removido):**
-![GET após delete](documentos/Prints/get-no-id-apagado-no-delete.png)
+![Swagger - get após delete](documentos/Prints/get-no-id-apagado-no-delete.png)
 
-### Tratamento de erros
+---
+
+### Listagens complementares (Postman)
+**Listar Tutores:**
+![Postman - listar tutores](documentos/Prints/postman-tutor-lista.png)
+
+**Listar Pets:**
+![Postman - listar pets](documentos/Prints/postman-pet-lista.png)
+
+**Listar Eventos:**
+![Postman - listar eventos](documentos/Prints/postman-evento-lista.png)
+
+**Listar Alertas:**
+![Postman - listar alertas](documentos/Prints/postman-alerta-lista.png)
+
+---
+
 ### Tratamento de erros
 A API trata exceções de forma adequada, retornando status HTTP e mensagens claras.
 
 ![Erro tratado](documentos/Prints/delete-crud-erro.png)
 
+---
+
 ## 👥 Equipe
 
-| Nome | RM | Responsabilidade |
-|---|---|---|
-| Natália Cristina | RM564099 | Backend Java + Spring Boot (API REST, Oracle, alertas) |
-| Nickolas Davi | RM564105 | App mobile (check-in, histórico, notificações) |
-| Rodrigo Silva | RM565162 | Backend Java + Spring Boot (API REST, Oracle, alertas) |
-| Samara Vilela | RM566133 | IoT — ESP32 + sensor PIR + integração |
-| Otávio Ferreira | RM565960 | Documentação, diagramas, testes e pitch (Compliance/QA) |
+| Nome | RM 
+
+| Natália Cristina | RM564099 
+| Nickolas Davi | RM564105 
+| Rodrigo Silva | RM565162 
+| Samara Vilela | RM566133 
+| Otávio Ferreira | RM565960 
 
 Turma: **2TDSR** — FIAP — 2026
