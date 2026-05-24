@@ -249,4 +249,7 @@ A API trata exceções de forma adequada, retornando status HTTP e mensagens cla
 | Samara Vilela | RM566133 
 | Otávio Ferreira | RM565960 
 
+Repositório GitHub: https://github.com/Rcsilva05/solin---java---chalenge
+
+
 Turma: **2TDSR** — FIAP — 2026
